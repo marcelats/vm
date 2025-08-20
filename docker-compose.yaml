@@ -1,0 +1,14 @@
+services:
+      
+  java-app:
+    build: ./c_code
+    container_name: meu-java   
+    ports:
+      - "8002:8002"
+    networks:
+      - app-network
+
+volumes: 
+
+networks:
+  app-network:
