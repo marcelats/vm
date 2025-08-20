@@ -92,7 +92,7 @@ String sessaoDir = tempDir.toAbsolutePath().toString();
 // Salvar arquivos do usuário em sessaoDir...
 
 String[] comandoDocker = {
-    "/usr/bin/docker", "run", "--rm",
+    "/snap/bin/docker", "run", "--rm",
     "-v", sessaoDir + ":/app",
     "--memory=256m",
     "--cpus=1",
