@@ -7,33 +7,14 @@ import java.nio.file.Paths;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Vector;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.UUID;
-
-import com.gerador.Gerador;
-import com.gerador.GeradorParSMPL;
-import com.gerador.GeradorSIMPACK;
-import com.gerador.GeradorSIMPACK2;
-import com.gerador.GeradorSMPL;
-import com.gerador.GeradorSMPLX;
-import com.graph.Arc;
-import com.graph.Chegada;
-import com.graph.Graph;
-import com.graph.Node;
-
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
 import io.javalin.Javalin;
 import io.javalin.http.UploadedFile;
 import java.io.*;
-
-import java.nio.charset.StandardCharsets;
 
 /**
  * Classe que extende Janela e implementa as funcionalidades para modelagem
