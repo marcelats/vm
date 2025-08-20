@@ -8,7 +8,5 @@ services:
     networks:
       - app-network
 
-volumes: 
-
 networks:
   app-network:
